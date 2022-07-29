@@ -1,0 +1,39 @@
+.about_header {
+  display: flex;
+  margin-top: 115px;
+  margin-left: 100px;
+  .about_main {
+    color: #ffffff;
+    h1 {
+      width: 562px;
+      height: 171px;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 75px;
+      line-height: 91px;
+    }
+    p {
+      margin-top: 52px;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+    }
+    .about_btn {
+      margin-top: 26px;
+      width: 240px;
+      height: 80px;
+      background-color: #ffffff;
+      color: #4a4a4a;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      border-radius: 22px;
+      border: 0;
+      &:hover{
+        background-color: #4a4a4a;
+        color: #ffffff;
+        border: 1px solid #1a1a1a ;
+      }
+    }
+  }
+}

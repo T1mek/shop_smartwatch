@@ -1,0 +1,41 @@
+.nav_main{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Inter';
+    
+    .nav_header{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        color: #FFFFFF;
+        align-items: center;
+        
+        p{
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 39px;
+        }
+    }
+    .nav_list{
+        display: flex;
+        list-style-type: none;
+        gap: 61px  ;
+        
+        
+        
+        li{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            cursor: pointer;
+            
+        }
+        
+    }
+    .nav_search{
+        display: flex;
+        gap: 38px ;
+        cursor: pointer;
+    }
+}
