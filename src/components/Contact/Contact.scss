@@ -1,0 +1,57 @@
+.contact_header {
+  color: #ffffff;
+  margin-top: 115px;
+  margin-left: 100px;
+  h1 {
+    font-weight: 600;
+    font-size: 75px;
+    line-height: 91px;
+    width: 562px;
+    height: 171px;
+  }
+  h3 {
+    margin-top: 65px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  h6 {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .contact_footer {
+    h3 {
+      margin-top: 43px;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+    }
+    p {
+      margin-top: 13px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      width: 562px;
+      height: 67px;
+    }
+    .contact_btn {
+      margin-top: 81px;
+      background: #ffffff;
+      border-radius: 22px;
+      width: 240px;
+      height: 70px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      cursor: pointer;
+      &:hover{
+        background-color: #4a4a4a;
+        color: #ffffff;
+        border: 1px solid #1a1a1a ;
+    }
+    }
+  }
+}

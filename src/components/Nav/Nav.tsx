@@ -1,18 +1,18 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "./Nav.scss";
 
 const Nav = () => {
   return (
     <nav className="nav_main">
       <div className="nav_header">
-        <p>SMARTWATCH</p>
+        <p ><Link style={{ textDecoration: 'none', color: 'white' }} to={"/"}>SMARTWATCH</Link></p>
         <li>
           <ul className="nav_list">
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>SHOP</li>
-            <li>CONTACT</li>
+            <li><Link style={{ textDecoration: 'none', color: 'white' }} to={"/"}>HOME</Link></li>
+            <li><Link style={{ textDecoration: 'none', color: 'white' }} to={"/about"}>ABOUT</Link></li>
+            <li><Link style={{ textDecoration: 'none', color: 'white' }} to={"/shop"}>SHOP</Link></li>
+            <li><Link style={{ textDecoration: 'none', color: 'white' }} to={"/contact"}>CONTACT</Link></li>
           </ul>
         </li>
         <div className="nav_search">

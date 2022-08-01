@@ -1,12 +1,12 @@
 .shop_container {
     display: flex;
-    margin-top: 233px;
+    margin-top: 176px;
     justify-content: space-between;
-    
+    align-items: center;
   .shop_header {
     width: 536px;
     height: 249px;
-    
+    margin-bottom: 253px;
     
     margin-left: 100px;
     color: #ffffff;
@@ -62,5 +62,23 @@
         }
       }
     }
+  }
+  .img_watch{
+    margin-left: 202px;
+   .color_btn{
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+    img{
+      cursor: pointer;
+    }
+    
+    
+   }
+  }
+  .img_arrow{
+    margin-right: 47px;
+    padding-bottom: 60px;
+    cursor: pointer;
   }
 }
