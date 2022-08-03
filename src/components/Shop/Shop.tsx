@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import "./Shop.scss";
 import Nav from "../Nav/Nav";
 
+import { Watch } from "../../data/Watch";
+
+
 const Shop = () => {
-  const [change, setChange] = useState(
-    <img src="/img/shop_watch.png" height={426} width={426} alt="Watch_Black" />
-  );
+  const [change, setChange] = useState(Watch[0]);
+
+  
+  
   return (
     <>
       <Nav />
@@ -22,82 +26,18 @@ const Shop = () => {
           </div>
         </div>
         <div className="img_watch">
-          {change}
+          <img src={change.image} height={426} width={426} alt="" />
+
           <div className="color_btn">
-            <img
-              src="/img/white_btn.png"
-              onClick={() =>
-                setChange(
-                  <img
-                    src="/img/white_watch.png"
-                    height={426}
-                    width={426}
-                    alt="ColorWhite"
-                  />
-                )
-              }
-              alt="ColorWhite"
-            />
-            <img
-              src="/img/red_btn.png"
-              onClick={() =>
-                setChange(
-                  <img
-                    src="/img/red_watch.png"
-                    height={426}
-                    width={426}
-                    alt="ColorWhite"
-                  />
-                )
-              }
-              alt="ColorRed"
-            />
-            <img
-              src="/img/pr_btn.png"
-              onClick={() =>
-                setChange(
-                  <img
-                    src="/img/blue_watch.png"
-                    height={426}
-                    width={780}
-                    alt="ColorWhite"
-                  />
-                )
-              }
-              alt="ColoBlue"
-            />
-            <img
-              src="/img/pink_btn.png"
-              onClick={() =>
-                setChange(
-                  <img
-                    src="/img/pink_watch.png"
-                    height={426}
-                    width={426}
-                    alt="ColorWhite"
-                  />
-                )
-              }
-              alt="ColorPink"
-            />
-            <img
-              src="/img/black_btn.png"
-              onClick={() =>
-                setChange(
-                  <img
-                    src="/img/shop_watch.png"
-                    height={426}
-                    width={426}
-                    alt="ColorWhite"
-                  />
-                )
-              }
-              alt="ColorBlack"
-            />
+            <img src="/img/white_btn.png" onClick={()=>setChange(Watch[0])}  alt="ColorWhite" />
+            <img src="/img/red_btn.png" onClick={()=>setChange(Watch[1])} alt="ColorRed" />
+            <img src="/img/pr_btn.png" onClick={()=>setChange(Watch[2])} alt="ColoBlue" />
+            <img src="/img/pink_btn.png" onClick={()=>setChange(Watch[3])} alt="ColorPink" />
+            <img src="/img/black_btn.png" onClick={()=>setChange(Watch[4])} alt="ColorBlack" />
           </div>
         </div>
         <div className="img_arrow">
-          <img src="/img/arrow.png" alt="Arrow" />
+          <img src="/img/arrow.png"  alt="Arrow" />
         </div>
       </div>
     </>
